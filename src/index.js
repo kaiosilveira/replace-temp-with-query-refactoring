@@ -5,8 +5,7 @@ export class Order {
   }
 
   get price() {
-    var discountFactor = this.discountFactor;
-    return this.basePrice * discountFactor;
+    return this.basePrice * this.discountFactor;
   }
 
   get basePrice() {
